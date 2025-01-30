@@ -1,28 +1,28 @@
 #!/usr/bin/python3
-"""
-Unlocked Boxess
-"""
-
-
-def join(T, R):
-    """"""
-    res = []
-    for e in R:
-        res = T[e]
-    return res
 
 
 def canUnlockAll(boxes):
-    """"""
-    index = 0
-    total = list(set(boxes[0]) | {0})
-    added = True
-    while added:
-        added = False
-        for j in join(boxes, total[index:]):
-            if j not in total:
-                total.append(j)
-                index = 1
-                added = True
-
-    return len(total) == len(boxes)
+    """
+    Description:
+    Write a method that determines if all the boxes can be opened
+    Arguments:
+    boxes --> List of Lists, it contains the boxes with keys
+    Reurn boolean
+    Variables:
+    keys --> List, Store the number keys to open boxes
+    i --> integer
+    """
+    #PUT THE KEYS
+    keys=[]
+    keys.extend(boxes[0])
+    i=1
+    while(i<len(boxes)):
+        if(i not in keys):
+            break
+        else:
+            keys.extend(boxes[i])
+            i+=1
+    if (i in keys):
+        return True
+    else:
+        return False
