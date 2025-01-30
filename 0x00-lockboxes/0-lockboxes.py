@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+THIS FUNCTION CHECKS WHETHER THE BOXES COULD BE LOCKED.
+"""
 def canUnlockAll(boxes):
     keys=[]
     keys.extend(boxes[0])
