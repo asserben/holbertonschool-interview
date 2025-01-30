@@ -2,12 +2,12 @@
 """
 This module provides a function to determine if all lockboxes can be unlocked.
 
-The function `canUnlockAll` checks if all boxes in a given list can be unlocked
+The function `can_unlock_all` checks if all boxes in a given list can be unlocked
 using the keys available in the boxes.
 """
 
 
-def canUnlockAll(boxes):
+def can_unlock_all(boxes):
     """
     Determines if all boxes can be unlocked.
 
@@ -18,6 +18,7 @@ def canUnlockAll(boxes):
     Returns:
         bool: True if all boxes can be unlocked, False otherwise.
     """
+    
 
 
 
