@@ -1,28 +1,30 @@
 #!/usr/bin/python3
 
 
-def canUnlockAll(boxes):
+def can_unlock_all(boxes):
     """
-    Description:
-    Write a method that determines if all the boxes can be opened
-    Arguments:
-    boxes --> List of Lists, it contains the boxes with keys
-    Reurn boolean
-    Variables:
-    keys --> List, Store the number keys to open boxes
-    i --> integer
+    Determines if all boxes can be unlocked starting from the first one.
+
+    Args:
+        boxes (list of list of int): A list where each sublist represents
+        the keys in a box.
+
+    Returns:
+        bool: True if all boxes can be unlocked, False otherwise.
     """
-    #PUT THE KEYS
-    keys=[]
+    # Initialize the keys list
+    keys = []
     keys.extend(boxes[0])
-    i=1
-    while(i<len(boxes)):
-        if(i not in keys):
+
+    i = 1
+    while i < len(boxes):
+        if i not in keys:
             break
         else:
             keys.extend(boxes[i])
-            i+=1
-    if (i in keys):
+            i += 1
+
+    if i in keys:
         return True
     else:
         return False
