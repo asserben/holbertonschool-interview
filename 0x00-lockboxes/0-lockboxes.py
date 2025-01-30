@@ -3,6 +3,9 @@
 THIS FUNCTION CHECKS WHETHER THE BOXES COULD BE LOCKED.
 """
 def canUnlockAll(boxes):
+    """
+    THIS IS FOR TESTING.
+    """
     keys=[]
     keys.extend(boxes[0])
     i=1
