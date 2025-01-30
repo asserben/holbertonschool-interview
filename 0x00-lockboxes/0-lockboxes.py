@@ -1,13 +1,22 @@
 #!/usr/bin/python3
 """
- Unlocked the boxes
+This module provides a function to determine if all lockboxes can be unlocked.
+
+The function `canUnlockAll` checks if all boxes in a given list can be unlocked
+using the keys available in the boxes.
 """
 
 
 def canUnlockAll(boxes):
     """
-        Look if the box is unlocked or not
-        Return true if is unlocked or false
+    Determines if all boxes can be unlocked.
+
+    Args:
+        boxes (list of list of int): A list of boxes, where each box contains
+                                    a list of keys (integers).
+
+    Returns:
+        bool: True if all boxes can be unlocked, False otherwise.
     """
 
 
