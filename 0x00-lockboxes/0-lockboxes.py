@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-"""LOCKBOXES"""
+"""
+Module for checking if all lockboxes can be unlocked.
+
+This module provides the `canUnlockAll` function, which determines whether all
+lockboxes in a given list can be unlocked using the keys inside them.
+"""
 
 
 def canUnlockAll(boxes):
