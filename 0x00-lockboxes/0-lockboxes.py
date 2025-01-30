@@ -23,6 +23,7 @@ def canUnlockAll(boxes):
     keys --> List, Store the number keys to open boxes
     i --> integer
     """
+    #PUT THE KEYS
     keys=[]
     keys.extend(boxes[0])
     i=1
